@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.androiddevelopment.sembasolutions.MainActivity">
+
+
+    <TextView
+        android:text="@string/userGreeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userGreetingTV"
+        android:textSize="30sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="?android:attr/colorMultiSelectHighlight"
+        android:layout_marginTop="41dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/passwordTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/passwordTV"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_green_dark"
+        android:textStyle="normal|bold"
+        tools:ignore="RelativeOverlap"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/usernameTV"
+        android:layout_alignEnd="@+id/usernameTV" />
+
+    <TextView
+        android:text="@string/usernameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/usernameTV"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:textAllCaps="true"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="71dp"
+        android:layout_below="@+id/userGreetingTV"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/usernameET"
+        android:hint="@string/usernameHintET"
+        android:textAlignment="center"
+        android:layout_alignBaseline="@+id/usernameTV"
+        android:layout_alignBottom="@+id/usernameTV"
+        android:layout_toRightOf="@+id/usernameTV"
+        android:layout_toEndOf="@+id/usernameTV" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passwordET"
+        android:textAlignment="center"
+        android:hint="@string/passwordHintET"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_alignBaseline="@+id/passwordTV"
+        android:layout_alignBottom="@+id/passwordTV"
+        android:layout_toRightOf="@+id/passwordTV"
+        android:layout_toEndOf="@+id/passwordTV" />
+
+    <Button
+        android:text="@string/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:id="@+id/loginButton"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/background_light"
+        android:elevation="0dp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:background="@color/colorPrimaryDark"
+        tools:ignore="UnusedAttribute"
+        android:layout_below="@+id/passwordET"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

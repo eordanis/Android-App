@@ -1,0 +1,33 @@
+<resources>
+
+    <string name="app_name">S&amp;E MBA Solutions</string>
+    <string name="userGreeting">Welcome to S&amp;E Mobile Banking Applications Solutions</string>
+    <string name="userHomeGreeting1">Welcome Ms. Munny Baggs, to S&amp;E Mobile Banking Applications Solutions</string>
+    <string name="userHomeGreeting2">Account Number: XXXX - XXXX - XXX666 </string>
+    <string name="userHomeGreeting3">Please select which account type you wish to access</string>
+    <string name="userHomeGreeting4">1) Please select one of the options below \n 2) Then enter an monetary amount in the input field \n 3) Click submit when you are ready</string>
+
+    <string name="usernameTV">username:</string>
+    <string name="usernameHintET">username</string>
+    <string name="passwordTV">password:</string>
+    <string name="passwordHintET">password</string>
+    <string name="loginButton">login</string>
+
+    <string name="checkingButton">checking</string>
+    <string name="savingsButton">savings</string>
+
+    <string name="checkingTitle">Checking Account Balance</string>
+    <string name="savingsTitle">Savings Account Balance </string>
+
+    <string name="withdrawLable">withdraw</string>
+    <string name="depositLable">deposit</string>
+    <string name="transferLable">transfer</string>
+
+    <string name="dollarLable">$</string>
+    <string name="submitLable">Submit</string>
+    <string name="hintLable">100.00</string>
+    <string name="balanceHolder">$       0.00</string>
+
+    <string name="action_quit">Quit</string>
+
+</resources>

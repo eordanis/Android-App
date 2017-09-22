@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:text="@string/savingsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/savingsTitleTV"
+        android:textSize="24sp"
+        android:layout_marginTop="51dp"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/holo_orange_dark" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_marginTop="53dp"
+        android:id="@+id/savingsEditText"
+        android:hint="@string/hintLable"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:textSize="24sp"
+        android:layout_alignTop="@+id/radioGroupSavings"
+        android:layout_alignRight="@+id/radioGroupSavings"
+        android:layout_alignEnd="@+id/radioGroupSavings"
+        tools:ignore="HardcodedText"
+        android:textColor="@android:color/holo_blue_light" />
+
+    <Button
+        android:text="@string/submitLable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/savingsSubmitbutton"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/background_light"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@+id/savingsEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp" />
+
+    <TextView
+        android:text="@string/balanceHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/savingsBalanceTV"
+        android:textStyle="normal|bold|italic"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:layout_marginTop="63dp"
+        android:layout_below="@+id/userGreeting2TV"
+        android:layout_alignRight="@+id/savingsSubmitbutton"
+        android:layout_alignEnd="@+id/savingsSubmitbutton"
+        tools:ignore="HardcodedText"
+        android:textColor="?android:attr/textColorLink" />
+
+    <TextView
+        android:text="@string/userHomeGreeting4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:id="@+id/userGreeting4TV"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/holo_purple" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupSavings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/userGreeting4TV"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:text="@string/withdrawLable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/withdrawSRB"
+            android:textAllCaps="true"
+            android:checked="false"
+            android:textStyle="normal|bold"
+            android:textColor="@color/colorAccent"
+            android:layout_marginRight="5dp"
+            android:onClick="onRadioButtonClicked"
+            tools:ignore="RtlHardcoded" />
+
+        <RadioButton
+            android:text="@string/depositLable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/depositSRB"
+            android:textAllCaps="true"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginRight="5dp"
+            android:onClick="onRadioButtonClicked"
+            android:layout_weight="1"
+            tools:ignore="RtlHardcoded" />
+
+        <RadioButton
+            android:text="@string/transferLable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/transferSRB"
+            android:layout_marginRight="15dp"
+            android:layout_marginEnd="15dp"
+            android:textAllCaps="true"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/holo_blue_light"
+            android:onClick="onRadioButtonClicked"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:text="@string/userHomeGreeting2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:id="@+id/userGreeting2TV"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_below="@+id/savingsTitleTV"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dollarLabel2TV"
+        android:textStyle="normal|bold"
+        android:textSize="24sp"
+        android:text="@string/dollarLable"
+        android:layout_alignBaseline="@+id/savingsEditText"
+        android:layout_alignBottom="@+id/savingsEditText"
+        android:layout_alignLeft="@+id/userGreeting2TV"
+        android:layout_alignStart="@+id/userGreeting2TV"
+        android:textColor="@android:color/holo_green_dark" />
+
+
+</RelativeLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:text="@string/checkingTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkingTitleTV"
+        android:textSize="24sp"
+        android:layout_marginTop="51dp"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/holo_orange_dark" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dollarLabel2TV"
+        android:textStyle="normal|bold"
+        android:textSize="24sp"
+        android:layout_alignBaseline="@+id/checkingEditText"
+        android:layout_alignBottom="@+id/checkingEditText"
+        android:text="@string/dollarLable"
+        android:layout_marginLeft="60dp"
+        android:textColor="@android:color/holo_green_dark" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_marginTop="53dp"
+        android:id="@+id/checkingEditText"
+        android:hint="@string/hintLable"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:textSize="24sp"
+        android:layout_alignTop="@+id/radioGroupChecking"
+        android:layout_alignRight="@+id/radioGroupChecking"
+        android:layout_alignEnd="@+id/radioGroupChecking"
+        tools:ignore="HardcodedText"
+        android:textColor="@android:color/holo_blue_dark" />
+
+    <Button
+        android:text="@string/submitLable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkingSubmitbutton"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/background_light"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@+id/checkingEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp" />
+
+    <TextView
+        android:text="@string/balanceHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkingBalanceTV"
+        android:textStyle="normal|bold|italic"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:layout_marginTop="63dp"
+        android:layout_below="@+id/userGreeting2TV"
+        android:layout_alignRight="@+id/checkingSubmitbutton"
+        android:layout_alignEnd="@+id/checkingSubmitbutton"
+        tools:ignore="HardcodedText"
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:text="@string/userHomeGreeting4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/userGreeting4TV"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/holo_purple" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupChecking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/userGreeting4TV"
+        android:layout_alignRight="@+id/userGreeting4TV"
+        android:layout_alignEnd="@+id/userGreeting4TV">
+
+        <RadioButton
+            android:text="@string/withdrawLable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/withdrawCRB"
+            android:textAllCaps="true"
+            android:textStyle="normal|bold"
+            android:textColor="@color/colorAccent"
+            android:layout_marginRight="5dp"
+            android:onClick="onRadioButtonClicked"
+            android:checked="false"
+            tools:ignore="RtlHardcoded" />
+
+        <RadioButton
+            android:text="@string/depositLable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/depositCRB"
+            android:textAllCaps="true"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginRight="5dp"
+            android:onClick="onRadioButtonClicked"
+            android:layout_weight="1"
+            tools:ignore="RtlHardcoded" />
+
+        <RadioButton
+            android:text="@string/transferLable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/transferCRB"
+            android:layout_marginRight="15dp"
+            android:layout_marginEnd="15dp"
+            android:textAllCaps="true"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/holo_blue_light"
+            android:onClick="onRadioButtonClicked"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:text="@string/userHomeGreeting2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:id="@+id/userGreeting2TV"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_below="@+id/checkingTitleTV"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
