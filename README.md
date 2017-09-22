@@ -4,7 +4,11 @@
 *****
 Android Mobile Banking App Simulation
 *****
-Read the idividual project io files to view:
+Open Res folder to view various visual aspects, within them are xml files
+*****
+Open the Semba's Solution folder to view all java files this app utilizes for functionallity.
+*****
+Read the idividual files to view:
 *****
 -list of styling code
 *****
